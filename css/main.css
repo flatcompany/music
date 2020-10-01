@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #312e2e;
+  padding: 0px;
+  margin: 0px;
+}
+
+.slider__main {
+  background: url(../img/bg.jpg) left no-repeat;
+  background-size: cover;
+}
+
+.slider__price {
+  background-color: #c4c4c4;
+}
+
+.slider__title {
+  position: absolute;
+  top: 0px;
+  left: 25%;
+  padding-top: 30px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+  color: #312e2e;
+}
+
+.wrap {
+  padding: 0px 30px;
+  width: 60%;
+  height: 50%;
+}
+
+.slider__title-string {
+  margin-bottom: 80px;
+}
+
+.slider__srvices-text {
+  position: absolute;
+  display: flex;
+}
+
+.slider__srvices-cost {
+  display: flex;
+  justify-content: right;
+  margin-left: 80%;
+}
+
+.container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100vh;
+}
+
+.info {
+  padding: 30px;
+  background-color: #d1d1d1;
+  height: 70%;
+}
+
+.info__name {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+  color: #312e2e;
+}
+
+.info__professional {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.info__title {
+  padding-top: 150px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.info__text {
+  padding-top: 10px;
+  width: 456px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+
+.data {
+  padding: 70px 30px;
+  background-color: #323232;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.data__phone {
+  margin-bottom: 30px;
+}
+
+.data__contact {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  margin-right: 30px;
+}
+
+.data__link {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-align: right;
+}
+
+.number {
+  padding-left: 28px;
+}
+
+.slider__main-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(34, 33, 33, 0.8);
+}
+
+.slider__main-content {
+  display: none;
+  color: #ffffff;
+  padding: 50px 50px;
+}
+
+.slider__main-content-name {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+}
+
+.slider__main-content-professional {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  margin-bottom: 200px;
+}
+
+.slider__main-content-title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.slider__main-content-text {
+  width: 456px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  margin-bottom: 150px;
+}
+
+.slider__main-data-phone {
+  margin-bottom: 20px;
+}
+
+.slider__main-data-contact {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  margin-right: 15px;
+}
+
+.slider__main-data-link {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-align: right;
+}
+
+@media (max-width: 1500px) {
+  .data__contact {
+    display: block;
+    font-size: 28px;
+    margin-right: 0px;
+  }
+  .data__link {
+    font-size: 28px;
+  }
+  .data {
+    padding: 50px 30px;
+  }
+
+  .number {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slider__srvices-cost {
+    margin-left: 75%;
+  }
+
+  .info__text {
+    width: 350px;
+  }
+
+  .info__name {
+    font-size: 36px;
+  }
+
+  .data__contact {
+    font-size: 24px;
+    margin-right: 0px;
+  }
+  .data__link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    position: relative;
+    display: none;
+  }
+
+  .wrap {
+    width: 95%;
+  }
+
+  .slider__srvices-cost {
+    margin-left: 80%;
+  }
+
+  .slider__title {
+    left: 38%;
+  }
+
+  .slider__main-content {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider__srvices-cost {
+    margin-left: 70%;
+  }
+
+  .slider__main-content-text {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider__main-content-name {
+    font-size: 36px;
+  }
+
+  .slider__main-content-title {
+    font-size: 16px;
+  }
+
+  .slider__main-content-text {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .slider__main-data-link {
+    display: block;
+    margin-left: 0px;
+    text-align: left;
+  }
+
+  .slider__title {
+    font-size: 36px;
+    left: 30%;
+  }
+
+  .slider__srvices-cost {
+    display: block;
+    text-align: left;
+    margin-left: 0px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-height: 900px) {
+  .data {
+    padding: 30px 30px;
+  }
+}
